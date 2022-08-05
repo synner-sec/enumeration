@@ -3,6 +3,7 @@
 ## Windows tools
 - Nishang
 - Windows Exploit Suggester 
+- WinPEAS
 ---
 ## View all the privileges using whoami /priv
 - The privileges of an account(which are either given to the account when created or inherited from a group) allow a user to carry out particular actions. Here are the most commonly abused privileges:
