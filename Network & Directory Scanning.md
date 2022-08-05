@@ -1,7 +1,8 @@
 # Network & Directory Scanning
 ---
 ## Network Scanning
-sudo nmap -sC -sV -oN nmap/initial $IP
+`sudo nmap -sC -sV -oN nmap/initial $IP`
+
 threader3000
 ---
 ## Directory Scanning
