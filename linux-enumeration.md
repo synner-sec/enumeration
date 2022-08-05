@@ -13,6 +13,7 @@
 
 - Priv Esc Resource: https://book.hacktricks.xyz/linux-hardening/linux-privilege-escalation-checklist
 ---
+- sudo -l - see what can be run as sudo for current user
 - cat /etc/passwd | cut -d ":" -f 1
 
 - find . -name flag1.txt: find the file named “flag1.txt” in the current directory
@@ -47,7 +48,6 @@
 
 - find / -perm -u=s -type f 2>/dev/null: Find files with the SUID bit, which allows us to run the file with a higher privilege level than the current user.
 
-sudo -l - see what can be run as sudo for current user
 ---
 if LD_PRELOAD in sudo -l output
 
