@@ -3,7 +3,7 @@
 ## Network Scanning
 `sudo nmap -sC -sV -oN nmap/initial $IP`
 
-threader3000
+- threader3000
 ---
 ## Directory Scanning
 gobuster dir --url <ip/url> -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
